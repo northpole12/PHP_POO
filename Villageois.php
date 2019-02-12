@@ -11,7 +11,7 @@ class Villageois extends Character
     public function __construct()
     {
         $this->_life = 25;
-        $this->_strenght = 5;
+        $this->_force = 5;
     }
 
 }

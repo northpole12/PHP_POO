@@ -19,6 +19,7 @@ class Character
 
     /**
      * @return mixed
+     * retourne la valeur comprise dans la variable
      */
     public function getName()
     {
@@ -27,6 +28,7 @@ class Character
 
     /**
      * @param mixed $name
+     * remplace la valeur comprise dans la variable
      */
     public function setName($name)
     {

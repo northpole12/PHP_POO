@@ -8,6 +8,9 @@ include 'Magicien.php';
 include 'Soldat.php';
 include 'Villageois.php';
 
+/*
+ * si nil y a valeur id dans get alors afficher les donnée de l'id correspondant
+ */
 if(isset($_GET['id']))
 {
     foreach (selectPerso($_GET['id']) as $perso_data)
@@ -20,13 +23,15 @@ if(isset($_GET['id']))
     {
         if (!empty($_POST))
         {
+            //lancer la fonction et rajouter avec les setter les valeur manquante puis inserer en bdd
             $personnage1 = createCharacter($_POST['type']);
             $personnage1->setName($_POST['name']);
             $personnage1->setType($_POST['type']);
             insert($personnage1);
 
         }
-        echo "<select>";
+        //permet de selectionner tout les personnage dispo en bdd
+        echo "<select name='persoA' value=''>";
         foreach (selectAll() as $key => $donnee)
         {
             $perso_id = $donnee["id"];
@@ -34,7 +39,8 @@ if(isset($_GET['id']))
             echo "<option value='$perso_id'>$perso_name</option>";
         }
         echo "</select>";
-        echo "<select>";
+
+        echo "<select name='persoB' value=''>";
         foreach (selectAll() as $key => $donnee)
         {
             $perso_id = $donnee["id"];
@@ -42,6 +48,7 @@ if(isset($_GET['id']))
             echo "<option value='$perso_id'>$perso_name</option>";
         }
         echo "</select>";
+
     } else {
 
     }

@@ -1,7 +1,9 @@
 <?php
 
 $bdd = new PDO('mysql:host=localhost;dbname=php_poo;charset=utf8', 'root', 'root');
-
+/*
+ * fonction pour definir des valeurs par defaut en rapport avec son type(permet creation d'un perso)
+ */
 function createCharacter($post)
 {
     if($post == 'magicien'){
@@ -14,7 +16,9 @@ function createCharacter($post)
         return new Villageois();
     }
 }
-
+/*
+ * fonction pour inserer les valeurs d'un objet dans la bdd
+ */
 function insert($character) {
     global $bdd;
     //hydrate($character);
@@ -27,7 +31,9 @@ function insert($character) {
     ]);
 
 }
-
+/*
+ * fonction selectionne un seul perso de la bdd depuis son id
+ */
 function selectPerso($id)
 {
     global $bdd;
@@ -36,7 +42,9 @@ function selectPerso($id)
     return $donnees;
 }
 
-
+/*
+ * fonction selectionne tout les perso de la bdd
+ */
 function selectAll()
 {
     global $bdd;
@@ -49,6 +57,9 @@ function combattre($perso1, $perso2)
 {
 
 }
+/*
+ * fonction qui deduis la vie d'un perso en fonction de la force de l'autre
+ */
 function attaquer($perso1, $perso2)
 {
     $dommage = $perso1->getForce();

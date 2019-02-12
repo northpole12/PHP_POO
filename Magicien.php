@@ -7,7 +7,9 @@
  */
 
 
-
+/*
+ * class enfant de Character met par defaut des valeurs à ces attributs quand la class est appelé (construct)
+ */
 class Magicien extends Character
 {
     public function __construct()
