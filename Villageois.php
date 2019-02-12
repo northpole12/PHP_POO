@@ -6,8 +6,6 @@
  * Time: 11:23
  */
 
-require 'exo_poo.php';
-
 class Villageois extends Character
 {
     public function __construct()
@@ -16,8 +14,4 @@ class Villageois extends Character
         $this->_strenght = 5;
     }
 
-    public function nom($nom)
-    {
-        $this->_name = $nom;
-    }
 }

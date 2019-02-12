@@ -6,14 +6,15 @@
  * Time: 09:28
  */
 
-$bdd = new PDO('mysql:host=localhost;dbname=php_poo;charset=utf8', 'root', 'root');
 
 class Character
 {
-    protected $_name;
-    protected $_type;
-    protected $_life;
-    protected $_strenght;
+    public $_name;
+    public $_type;
+    public $_life;
+    public $_force;
+
+
 
 
     /**
@@ -67,21 +68,22 @@ class Character
     /**
      * @return mixed
      */
-    public function getStrenght()
+    public function getForce()
     {
-        return $this->_strenght;
+        return $this->_force;
     }
 
     /**
-     * @param mixed $strenght
+     * @param mixed $force
      */
-    public function setStrenght($strenght)
+    public function setForce($force)
     {
-        $this->_strenght = $strenght;
+        $this->_force = $force;
     }
 
 
 }
 
 
-$personnage1 = new Magicien($nom, $typePerso);
+
+
