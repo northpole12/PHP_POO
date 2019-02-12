@@ -83,4 +83,5 @@ class Character
 
 }
 
+
 $personnage1 = new Magicien($nom, $typePerso);
