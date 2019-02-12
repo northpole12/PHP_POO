@@ -22,6 +22,7 @@ include 'Villageois.php';
     <title>jeux</title>
 </head>
 <body>
+<h1>BIENVENUE DANS LE JEUUUUU</h1>
     <form action="perso.php" method="POST">
         <input type="text" name="name">
         <select name="type" value="">

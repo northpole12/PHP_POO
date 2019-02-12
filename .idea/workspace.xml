@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d25f5d64-48f8-4876-ae42-718abd1c6aa3" name="Default Changelist" comment="" />
+    <list default="true" id="d25f5d64-48f8-4876-ae42-718abd1c6aa3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="274">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -135,9 +137,9 @@
         <option value="$PROJECT_DIR$/Soldat.php" />
         <option value="$PROJECT_DIR$/Villageois.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7dd66bc9-81de-4524-81ea-757306d667a6/console_2.sql" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/perso.php" />
         <option value="$PROJECT_DIR$/Action.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -223,15 +225,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25400000" />
+    <option name="totallyTimeSpent" value="25414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13161659" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -244,6 +246,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28915662" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -257,13 +260,7 @@
     <entry file="file://$USER_HOME$/Documents/projet perso/Personnage.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Personnage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Personnage.php" />
     <entry file="file://$PROJECT_DIR$/exo poo.php" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -339,8 +336,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="274">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
         </state>
       </provider>
     </entry>
