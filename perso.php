@@ -11,11 +11,15 @@ include 'Villageois.php';
 /*
  * si nil y a valeur id dans get alors afficher les donnée de l'id correspondant
  */
-if(isset($_GET['id']))
+if(isset($_GET))
 {
-    foreach (selectPerso($_GET['id']) as $perso_data)
+    foreach (selectPerso($_GET['persoA']) as $perso_data)
     {
         echo $perso_data;
+
+    }
+    foreach (selectPerso($_GET['persoB']) as $perso_data1){
+        echo $perso_data1;
     }
 
 } else {
@@ -31,26 +35,49 @@ if(isset($_GET['id']))
 
         }
         //permet de selectionner tout les personnage dispo en bdd
-        echo "<select name='persoA' value=''>";
-        foreach (selectAll() as $key => $donnee)
-        {
-            $perso_id = $donnee["id"];
-            $perso_name = $donnee["name"];
-            echo "<option value='$perso_id'>$perso_name</option>";
-        }
-        echo "</select>";
+        echo "<form action='perso.php' method='GET'>";
+            echo "<select name='persoA' value='']'>";
+            foreach (selectAll() as $key => $donnee)
+            {
+                $perso_id = $donnee["id"];
+                $perso_name = $donnee["name"];
+                echo "<option value='$perso_id'>$perso_name</option>";
+            }
+            echo "</select>";
 
-        echo "<select name='persoB' value=''>";
-        foreach (selectAll() as $key => $donnee)
-        {
-            $perso_id = $donnee["id"];
-            $perso_name = $donnee["name"];
-            echo "<option value='$perso_id'>$perso_name</option>";
-        }
-        echo "</select>";
+            echo "<select name='persoB' value=''>";
+            foreach (selectAll() as $key => $donnee)
+            {
+                $perso_id = $donnee["id"];
+                $perso_name = $donnee["name"];
+                echo "<option value='$perso_id'>$perso_name</option>";
+            }
+
+            echo "</select>";
+            echo "<input type='submit'>";
+        echo "</form>";
 
     } else {
+        echo "<form action='perso.php' method='get'>";
+            echo "<select name='persoA' value=''>";
+            foreach (selectAll() as $key => $donnee)
+            {
+                $perso_id = $donnee["id"];
+                $perso_name = $donnee["name"];
+                echo "<option value='$perso_id'>$perso_name</option>";
+            }
+            echo "</select>";
 
+            echo "<select name='persoB' value=''>";
+            foreach (selectAll() as $key => $donnee)
+            {
+                $perso_id = $donnee["id"];
+                $perso_name = $donnee["name"];
+                echo "<option value='$perso_id'>$perso_name</option>";
+            }
+            echo "</select>";
+            echo "<input type='submit'>";
+        echo "</form>";
     }
 }
 

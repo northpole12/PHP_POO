@@ -42,7 +42,6 @@ include 'Villageois.php';
 
         }*/
         ?>
-        <h2>Personnage 1 : </h2>
     </form>
 </body>
 </html>
